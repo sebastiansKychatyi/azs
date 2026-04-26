@@ -1,0 +1,99 @@
+header {
+  padding: 156px 0 40px;
+}
+
+section {
+  padding: 70px 0;
+}
+
+ul li {font-size:1.2rem;font-weight:400}
+pre {font-size:1.1rem;font-weight:500}
+/* .container{max-width:1400px} */
+strong {font-weight:600}
+
+ul li a {color: #17A2B8; font-weight:600}
+ul li :hover {text-decoration:none;}
+
+.text-max {font-size: 130%;}
+.blockss{max-height: 260px;}
+
+  .header-h1 h2 {
+    position: relative;
+    padding-bottom: .8rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #00838f;
+  }
+ .header-h1 h2 span, h4 span {
+    font-size: 2rem;
+    color: #7982B9;
+  } 
+  .header-h1 h2::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #00838f;
+    bottom: .35rem;
+    left: 50%;
+    width: 30%;
+    transform: translateX(-50%);
+  }
+  .header-h1 h2::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #00838f;
+    bottom: 0;
+    left: 50%;
+    width: 15%;
+    transform: translateX(-50%);
+  }
+  .lead {font-size: 1.15rem; font-weight:400}
+  .lead ul li {font-size: 1.2rem; font-weight:300}
+  
+  .alinkss a {color: #fff;}
+  .alinkss :hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.go-up, .go-down {
+ display: none;
+ position: fixed;
+ z-index: 9999; 
+ right: 5%;
+ background: #17A2B8;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ cursor: pointer;
+ color: #fff;
+ text-align: center;
+ font: normal normal 42px/42px sans-serif;
+ text-shadow: 0 1px 2px #000;
+ opacity: .6;
+ /*padding: 3px;*/
+ margin-bottom: 5px;
+ width: 42px;
+ height: 42px;
+}
+.go-up { bottom: 60px; }
+.go-down { bottom: 10px; }
+.go-down:hover,
+.go-up:hover {
+ opacity: 1;
+ box-shadow: 0 5px 0.5em -1px #666;
+}
+
+@media only screen and (min-width: 989px) and (max-width: 1200px){
+.blockss{max-height: 300px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 989px){
+.go-up, .go-down {right: 1%;}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px){
+.go-up, .go-down, .go-down:hover, .go-up:hover {opacity: 0; display: none; z-index: 0; }
+}
+
+@media only screen and (max-width: 480px){
+.go-up, .go-down, .go-down:hover, .go-up:hover {opacity: 0; display: none; z-index: 0; }
+}
