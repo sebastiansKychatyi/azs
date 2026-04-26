@@ -99,6 +99,17 @@
 
 	/* Sub-section headings inside product sections */
 	.sub-heading { font-size:17px; font-weight:700; color:#2d3134; margin:30px 0 5px; padding-bottom:8px; border-bottom:2px solid #d8a65f; display:inline-block; }
+
+	/* Fix equal-height card grids */
+	.eq-row {
+		display: flex !important;
+		flex-wrap: wrap;
+	}
+	.eq-row > [class*="col-"] {
+		display: flex;
+		flex-direction: column;
+	}
+	.svc-card, .prod-cat-box { height: 100%; }
 	</style>
 </head>
 <body>
@@ -191,7 +202,7 @@
 	<div class="container">
 		<div class="page_title center"><h2>Termékek</h2></div>
 		<p class="center" style="max-width:760px;margin:0 auto 40px;">Megbízható és minőségi kompresszorberendezéseket kínálunk levegőhöz és minden műszaki gázhoz, bármilyen nyomáson. Küldjön nekünk megkeresést, és optimális ár/érték arányú megoldást javaslunk Önnek.</p>
-		<div class="row">
+		<div class="row eq-row">
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padbot20">
 				<div class="prod-cat-box">
 					<h4><a href="product-1.html">Kompresszorok 20 bar-ig</a></h4>
@@ -308,7 +319,7 @@
 	<div class="container">
 		<div class="page_title center"><h2>Szolgáltatások</h2></div>
 		<p class="center" style="max-width:700px;margin:0 auto 40px;">Az AZS Engineering teljes körű szolgáltatásokat nyújt kompresszorberendezések szállítása, tervezése, felszerelése és karbantartása terén.</p>
-		<div class="row">
+		<div class="row eq-row">
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padbot25">
 				<div class="svc-card">
 					<img src="images/6. Breathing air compressor.png" alt="" />
