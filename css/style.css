@@ -982,7 +982,8 @@ footer {
 	overflow:hidden;
 	padding:40px 0 10px;
 	color:#80878c;
-	background-color:#2d3134;
+	background-color:#1a1d1f;
+	border-top:3px solid #d8a65f;
 }
 
 footer h4 {
@@ -999,8 +1000,8 @@ footer a:hover {color:#d8a65f;}
 #copyright {
 	padding:23px 0;
 	color:#fff;
-	border-top:1px solid #434343;
-	background-color:#2d3134;
+	border-top:1px solid #2e3133;
+	background-color:#111315;
 }
 #copyright span {color:#d8a65f;}
 
